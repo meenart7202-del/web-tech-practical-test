@@ -1,105 +1,29 @@
 /* ============================================================
    SUZA Web Technologies — Practical Test
-   Student      : [WRITE YOUR FULL NAME]
-   Reg No.      : [WRITE YOUR REG NUMBER]
-   Question     : Q[XXX] — [PASTE YOUR QUESTION TITLE]
+   Student      : [AMINA JUMA HAMAD]
+   Reg No.      : [24BCS035]
+   Question     : Q[0098] — SHOPPING CART ITEMS TABLE
    ============================================================ */
 
-/* ---------- Starter reset (you may keep or modify) ---------- */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body{
+    background-color: white;
+    font-size: 18px;
+    width: 100%;
 }
 
-body {
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #2d3436;
-  background: #fafafa;
+table{
+    width: 100px;
+    border-collapse: collapse;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+th,tr,th{
+    padding: 10px;
 }
 
-a {
-  color: #0a3d62;
+.btntotal:hover{
+background: blue;
 }
 
-/* ---------- Header / Footer (do not over-edit) ---------- */
-.page-header,
-.page-footer {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 1.5rem;
-  background: #ffffff;
-  border-bottom: 1px solid #e2e2e2;
-}
-
-.page-header .logo {
-  flex-shrink: 0;
-}
-
-.page-header h1 {
-  margin: 0;
-  font-size: 1.4rem;
-}
-
-.page-header .subtitle {
-  margin: 0;
-  color: #636e72;
-  font-size: 0.9rem;
-}
-
-.page-footer {
-  border-top: 1px solid #e2e2e2;
-  border-bottom: none;
-  margin-top: 3rem;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 0.9rem;
-}
-
-.page-footer p {
-  margin: 0.25rem 0;
-}
-
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-}
-
-/* ============================================================
-   YOUR SOLUTION CSS GOES BELOW
-   Delete the .solution placeholder rules once you start.
-   ============================================================ */
-
-.solution {
-  background: #fff;
-  border: 1px dashed #b2bec3;
-  padding: 2rem;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.solution img {
-  margin: 1rem auto;
-  border-radius: 8px;
-}
-
-/* ---------- Example media query (mobile) ---------- */
-@media (max-width: 600px) {
-  .page-header {
-    flex-direction: column;
-    text-align: center;
-  }
-  main {
-    padding: 1rem;
-  }
+.btncheck:hover{
+    background: lightseagreen;
 }

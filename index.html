@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Practical Test — [Replace with your question title]</title>
+  <title>Practical Test — [Shopping Cart Items Table]</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,13 +11,23 @@
   <!--
     ============================================================
     SUZA Web Technologies — Practical Test
-    Student Name      : [WRITE YOUR FULL NAME]
-    Registration No.  : [WRITE YOUR REG NUMBER]
-    Question Number   : Q[XXX]
-    Question Title    : [PASTE YOUR ASSIGNED QUESTION TITLE]
+    Student Name      : [AMINA JUMA HAMAD]
+    Registration No.  : [24BCS035]
+    Question Number   : Q[0098]
+    Question Title    :SHOPPING CART ITEMS TABLE
 
     YOUR TASK (paste from QUESTIONS.docx):
-    [PASTE THE FULL TASK DESCRIPTION FROM THE QUESTIONS DOCUMENT]
+    Build a SHOPPING CART TABLE. Columns: Product Image, Name, Price, Quantity (number input), Subtotal,
+Remove (link/x). Footer row with Total and a 'Checkout' button. Build the page with valid HTML5 (DOCTYPE,
+lang, charset, viewport, page title) using semantic elements (header, main, footer, and section/article/nav
+where they fit). Put all styles in styles.css — NO inline style attributes and NO <style> tags in the HTML. Use
+Flexbox or CSS Grid for the layout. Include at least 2 images (each with descriptive alt text — you may use the
+SVGs in assets/images/ or upload your own under that folder) and at least 2 working links, where at least one
+is an external link that opens in a new tab with rel="noopener noreferrer". Define your colours using CSS
+variables (custom properties). Add hover effects on interactive elements (links, buttons, cards). Add at least
+one @media query so the page still works on a 375px-wide phone screen. Write your full name, registration
+number, and question number in the top comment of both files and in the page footer. Do NOT use JavaScript
+and do NOT use any CSS framework (Bootstrap, Tailwind, etc.) — pure HTML + CSS only
 
     REQUIREMENTS FOR EVERY QUESTION:
     1. Use semantic HTML5 (header, main, footer, section, article where appropriate).
@@ -30,49 +40,56 @@
     8. No JavaScript required (HTML + CSS only).
     ============================================================
   -->
+    <header>
+        <h1>Shopping Cart Table</h1>
+    </header>
+    <main>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity(number input)</th>
+                <th>Subtotal</th>
+                <th>Remove(link/x)</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+            <td><img src="image.jpg" alt="Cat" width="70px" height="50"></td>
+            <td>Rice</td>
+            <td>2000</td>
+            <td><input type="number" value="0"></td>
+            <td>2000</td>
+            <td><a href="#">Remove</a></td>
+           </tr>
 
-  <header class="page-header">
-    <img src="assets/images/logo.svg" alt="SUZA logo" class="logo" width="56" height="56" />
-    <div>
-      <h1>Web Technologies — Practical Test</h1>
-      <p class="subtitle">State University of Zanzibar · SCCMS</p>
-    </div>
-  </header>
+           <tr>
+            <td><img src="coffee.png" alt="Coffee" width="70px"></td>
+            <td>Coffee</td>
+            <td>3000</td>
+            <td><input type="number" value="0"></td>
+            <td>3000</td>
+            <td><a href="#">Remove</a></td>
+           </tr>
+           <tr>
+            <td colspan="6">
+                <footer>
+                   <button class="btntotal">Total: 5000</button>
+                   <button>Checkout</button>
+                </footer>
+            </td>
+           </tr>
+        </tbody>
+    </table>
+    </main>
 
-  <main>
-    <!-- ============================================================
-         REPLACE EVERYTHING INSIDE <main> WITH YOUR SOLUTION
-         ============================================================ -->
-
-    <section class="solution">
-      <h2>Your Solution Goes Here</h2>
-      <p>
-        Delete this placeholder and build the component described in your
-        assigned question. Remember: at least <strong>2 images</strong> and
-        <strong>2 links</strong>.
-      </p>
-
-      <img src="assets/images/banner.svg" alt="Sample banner — replace with your own content" />
-
-      <p>
-        Helpful reference:
-        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">
-          MDN Web Docs
-        </a>
-        ·
-        <a href="https://massoudhamad.github.io/web-technologies/index.html" target="_blank" rel="noopener noreferrer">
-          Course site
-        </a>
-      </p>
-    </section>
-
-  </main>
-
-  <footer class="page-footer">
+    <footer class="page-footer">
     <p>
-      Submitted by: <strong>[Your Name]</strong> ·
-      Reg No: <strong>[Your Reg No]</strong> ·
-      Question: <strong>Q[XXX]</strong>
+      Submitted by: <strong>[AMINA JUMA HAMAD]</strong> ·
+      Reg No: <strong>[24BCS035]</strong> ·
+      Question: <strong>Q[0098]</strong>
     </p>
     <p>
       <small>
